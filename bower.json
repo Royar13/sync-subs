@@ -1,0 +1,21 @@
+{
+  "name": "sync-subs",
+  "description": "Shift subtitles time",
+  "main": "index.js",
+  "authors": [
+    "Roy Arad <royar13@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Royar13/sync-subs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}
