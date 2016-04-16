@@ -19,12 +19,12 @@ var renameFunc = function (path) {
 gulp.task("uglify", function () {
     return gulp.src("src/**/js/*.js")
             .pipe(plumber(onError))
-            //.pipe(sourcemaps.init())
-            //.pipe(concat('script.js'))
+            .pipe(sourcemaps.init())
+            .pipe(concat('script.js'))
             //.pipe(uglify())
-            //.pipe(sourcemaps.write("maps"))
+            .pipe(sourcemaps.write("maps"))
             .pipe(rename(renameFunc))
-            .pipe(gulp.dest("assets"));
+            .pipe(gulp.dest("assets/js"));
 });
 
 gulp.task("sass", function () {
